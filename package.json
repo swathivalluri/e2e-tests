@@ -1,0 +1,37 @@
+{
+  "name": "nwca",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx playwright test",
+    "test:debug": "npx playwright test --debug",
+    "test:ui": "npx playwright test --ui",
+    "test:codegen": "npx playwright codegen",
+    "test:chrome": "npx playwright test --project=chromium",
+    "test:specificFile": "npx playwright test src/tests/yourTestFile.spec.ts",
+    "lint": "eslint './src/**/*.{ts,tsx}' --fix",
+    "generate:reports": "npx playwright show-report",
+    "show:report": "npx playwright show-report"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@eslint/js": "^9.20.0",
+    "@faker-js/faker": "^9.5.0",
+    "@playwright/test": "^1.50.1",
+    "@types/node": "^22.13.2",
+    "@typescript-eslint/eslint-plugin": "^8.24.0",
+    "@typescript-eslint/parser": "^8.24.0",
+    "dotenv": "^16.4.7",
+    "eslint": "^9.20.1",
+    "globals": "^15.14.0",
+    "ts-node": "^10.9.2",
+    "typescript-eslint": "^8.24.0",
+    "winston": "^3.17.0"
+  },
+  "dependencies": {
+    "tsconfig-paths": "^4.2.0"
+  }
+}
